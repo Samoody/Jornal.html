@@ -1,0 +1,409 @@
+/* Estilo geral: cores, fontes e espaçamento da página */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f3f6;
+    color: #30343b;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e identidade do portal */
+.cabecalho {
+    background-color: #102a43;
+    color: white;
+    padding: 24px 7%;
+}
+
+.marca {
+    display: block;
+    overflow: hidden;
+}
+
+.logo {
+    background-color: #f28c28;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 12px;
+    margin-right: 14px;
+    float: left;
+    border: 2px solid white;
+}
+
+.nome-portal {
+    display: inline-block;
+}
+
+.nome-portal h1 {
+    margin: 0;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.nome-portal p {
+    margin: 5px 0 0;
+    color: #d9e2ec;
+}
+
+.data {
+    margin: 18px 0 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #d9e2ec;
+}
+
+/* Menu de navegação */
+.menu {
+    background-color: #f28c28;
+    padding: 12px 7%;
+    text-align: center;
+}
+
+.menu a {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 2px;
+}
+
+.menu a:hover {
+    background-color: #102a43;
+    text-decoration: underline;
+}
+
+/* Faixa de destaque */
+.faixa-noticias {
+    background-color: white;
+    padding: 13px 7%;
+    border-bottom: 1px solid #d9dee5;
+    font-size: 14px;
+}
+
+.etiqueta-urgente {
+    background-color: #b42318;
+    color: white;
+    font-weight: bold;
+    padding: 5px 8px;
+    margin-right: 10px;
+}
+
+/* Conteúdo principal e coluna lateral: sem Flexbox ou Grid */
+.conteudo {
+    width: 86%;
+    max-width: 1200px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.noticia-principal {
+    background-color: white;
+    width: 65%;
+    padding: 25px;
+    border: 1px solid #d9dee5;
+    float: left;
+}
+
+.categoria {
+    color: #c05621;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 0 8px;
+}
+
+.noticia-principal h2 {
+    color: #102a43;
+    font-size: 30px;
+    line-height: 1.25;
+    margin: 0 0 12px;
+}
+
+.subtitulo {
+    color: #667085;
+    font-size: 18px;
+    margin: 0 0 15px;
+}
+
+.autor {
+    color: #7b8491;
+    font-size: 13px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+}
+
+.imagem-principal {
+    width: 100%;
+    height: auto;
+    border: 1px solid #d9dee5;
+    margin: 0 0 12px;
+}
+
+.noticia-principal > p:not(.categoria):not(.subtitulo):not(.autor):not(.aviso) {
+    font-size: 16px;
+    text-align: justify;
+    margin: 16px 0;
+}
+
+/* Frase em destaque */
+.destaque {
+    background-color: #eaf2f8;
+    color: #102a43;
+    border-left: 5px solid #f28c28;
+    padding: 16px;
+    margin: 25px 0;
+    font-size: 17px;
+    font-style: italic;
+}
+
+/* Links */
+.leia-mais {
+    display: inline-block;
+    background-color: #102a43;
+    color: white;
+    padding: 10px 17px;
+    margin-top: 8px;
+    text-decoration: none;
+    border: 1px solid #102a43;
+}
+
+.leia-mais:hover {
+    background-color: #f28c28;
+    border-color: #f28c28;
+    text-decoration: underline;
+}
+
+.aviso {
+    color: #7b8491;
+    font-size: 11px;
+    margin-top: 18px;
+}
+
+/* Barra lateral e cartões de notícias */
+.barra-lateral {
+    width: 32%;
+    float: right;
+}
+
+.bloco-lateral {
+    background-color: white;
+    padding: 18px;
+    border: 1px solid #d9dee5;
+}
+
+.bloco-lateral > h2 {
+    color: #102a43;
+    border-left: 5px solid #f28c28;
+    padding-left: 10px;
+    margin: 0 0 18px;
+    font-size: 22px;
+}
+
+.cartao-noticia {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+
+.cartao-noticia:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.cartao-noticia img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #d9dee5;
+}
+
+.cartao-noticia .categoria {
+    margin-top: 10px;
+}
+
+.cartao-noticia h3 {
+    color: #102a43;
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 4px 0 8px;
+}
+
+.cartao-noticia p:not(.categoria) {
+    font-size: 14px;
+    margin: 6px 0 10px;
+}
+
+.cartao-noticia a,
+.sobre a {
+    color: #a84412;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cartao-noticia a:hover,
+.sobre a:hover {
+    text-decoration: underline;
+}
+
+/* Área Sobre */
+.sobre {
+    clear: both;
+    background-color: white;
+    width: 86%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 22px 25px;
+    border: 1px solid #d9dee5;
+    border-left: 5px solid #f28c28;
+}
+
+.sobre h2 {
+    color: #102a43;
+    margin-top: 0;
+}
+
+/* Rodapé */
+.rodape {
+    clear: both;
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 22px 10px;
+    margin-top: 35px;
+    font-size: 13px;
+}
+
+.rodape p {
+    margin: 5px;
+}
+
+/* Adaptação para telas pequenas, usando apenas CSS */
+@media (max-width: 800px) {
+    .cabecalho {
+        padding: 20px 5%;
+    }
+
+    .nome-portal h1 {
+        font-size: 25px;
+    }
+
+    .menu {
+        padding: 10px 3%;
+    }
+
+    .menu a {
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    .conteudo {
+        width: 92%;
+    }
+
+    .noticia-principal,
+    .barra-lateral {
+        width: 100%;
+        float: none;
+    }
+
+    .barra-lateral {
+        margin-top: 20px;
+    }
+
+    .noticia-principal h2 {
+        font-size: 25px;
+    }
+
+    .sobre {
+        width: 92%;
+    }
+}
+
+
+/* Central de esporte */
+.esportes {
+    clear: both;
+    width: 86%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #d9dee5;
+}
+
+.esportes > h2 {
+    color: #102a43;
+    font-size: 28px;
+    margin: 0 0 5px;
+    border-left: 5px solid #f28c28;
+    padding-left: 12px;
+}
+
+.introducao-esportes {
+    color: #667085;
+    margin-top: 5px;
+    margin-bottom: 22px;
+}
+
+.cartoes-esportivos {
+    overflow: hidden;
+}
+
+.cartao-esporte {
+    width: 48%;
+    float: left;
+    margin: 0 2% 22px 0;
+    padding: 15px;
+    border: 1px solid #e1e5ea;
+    background-color: #fbfcfe;
+}
+
+.cartao-esporte:nth-child(even) {
+    margin-right: 0;
+}
+
+.cartao-esporte img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #d9dee5;
+}
+
+.cartao-esporte h3 {
+    color: #102a43;
+    font-size: 19px;
+    line-height: 1.35;
+    margin: 5px 0 10px;
+}
+
+.cartao-esporte p:not(.categoria) {
+    font-size: 14px;
+}
+
+.cartao-esporte a {
+    color: #a84412;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cartao-esporte a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .esportes {
+        width: 92%;
+        padding: 16px;
+    }
+
+    .cartao-esporte {
+        width: 100%;
+        float: none;
+        margin: 0 0 18px;
+    }
+}
