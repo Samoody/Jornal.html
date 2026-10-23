@@ -1,345 +1,89 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jornal TimesBH: notícias atualizadas de Belo Horizonte, Minas Gerais, Rio de Janeiro, esportes, cultura e tecnologia.">
-    <meta name="theme-color" content="#102b46">
-    <title>Jornal TimesBH | Notícias de BH, Minas e Rio</title>
+    <meta name="description" content="TimesBH: notícias de Belo Horizonte, Minas Gerais e do futebol brasileiro.">
+    <meta name="theme-color" content="#102a43">
+    <title>TimesBH | Notícias e Esportes</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<header class="cabecalho" id="inicio">
-    <div class="marca">
-        <span class="logo">TBH</span>
-        <div class="nome-portal">
-            <h1>Jornal TimesBH</h1>
-            <p>Minas, Rio e Brasil: informação perto de você</p>
+    <header class="cabecalho" id="inicio">
+        <div class="topo">
+            <a class="marca" href="#inicio" aria-label="TimesBH, página inicial">
+                <span class="logo">TBH</span>
+                <span class="nome-portal">TimesBH<span class="ponto-logo">.</span><small>NOTÍCIA NA VELOCIDADE DO JOGO</small></span>
+            </a>
+            <p class="data">SEXTA-FEIRA, 23 DE OUTUBRO DE 2026</p>
         </div>
+    </header>
+
+    <nav class="menu" aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#destaque">Destaque</a>
+        <a href="#esportes">Esportes</a>
+        <a href="#minas">Minas Gerais</a>
+        <a href="#fontes">Fontes</a>
+    </nav>
+
+    <div class="faixa-noticias">
+        <span class="ao-vivo">GIRO TIMESBH</span>
+        <span>Atualizado em 23/10/2026 • Notícias com links para as reportagens originais</span>
     </div>
-    <p class="data">EDIÇÃO DIGITAL • 23 DE OUTUBRO DE 2026</p>
-</header>
 
-<nav class="menu" aria-label="Menu principal">
-    <a href="#inicio">Início</a>
-    <a href="#bh">Belo Horizonte</a>
-    <a href="#minas">Minas Gerais</a>
-    <a href="#rio">Rio de Janeiro</a>
-    <a href="#esportes">Esportes</a>
-    <a href="#cultura">Cultura</a>
-    <a href="#tecnologia">Tecnologia</a>
-</nav>
-
-<div class="faixa-noticias">
-    <span class="etiqueta-urgente">EDIÇÃO DE HOJE</span>
-    <span>Sexta-feira, 23/10/2026 — notícias, serviços e acontecimentos.</span>
-</div>
-
-<main class="conteudo">
-
-    <section class="noticia-principal" id="bh">
-        <p class="categoria">BELO HORIZONTE • SERVIÇO</p>
-
-        <h2>BH tem previsão de pancadas de chuva nesta quinta-feira</h2>
-
-        <p class="subtitulo">
-            Previsão indica sol entre nuvens, com possibilidade de chuva
-            à tarde e à noite na capital mineira.
-        </p>
-
-        <p class="autor">Por Redação TimesBH | 22 de outubro de 2026</p>
-
-        <figure>
-            <img class="imagem-principal"
-                 src="https://images.unsplash.com/photo-1598135753163-6167c1a1ad65?auto=format&fit=crop&w=1200&q=85"
-                 alt="Vista urbana de Belo Horizonte"
-                 loading="eager">
-            <figcaption>
-                Imagem ilustrativa. Consulte a previsão atualizada nos canais oficiais.
-            </figcaption>
-        </figure>
-
-        <p>
-            A previsão do tempo para esta quinta-feira, 22 de outubro,
-            indica sol com muitas nuvens em Belo Horizonte, além de
-            pancadas de chuva durante a tarde e a noite.
-        </p>
-
-        <p>
-            Segundo a previsão divulgada para a capital, as temperaturas
-            podem variar entre 17 °C e 29 °C. A possibilidade de chuva
-            exige atenção de quem pretende sair de casa no fim do dia.
-        </p>
-
-        <p>
-            A recomendação é acompanhar as atualizações meteorológicas
-            e os avisos da Defesa Civil, principalmente em períodos de
-            chuva intensa.
-        </p>
-
-        <a class="leia-mais"
-           href="https://prefeitura.pbh.gov.br/"
-           target="_blank"
-           rel="noopener noreferrer">
-            Acompanhar informações oficiais de BH
-        </a>
-
-        <p class="aviso">
-            Fonte de referência: previsão do tempo divulgada em 22/10/2026.
-            Consulte os canais meteorológicos oficiais para atualizações.
-        </p>
-    </section>
-
-    <aside class="barra-lateral">
-        <section class="bloco-lateral" id="minas">
-            <h2>Mais notícias</h2>
-
-            <article class="cartao-noticia">
-                <img
-                    src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=600&q=80"
-                    alt="Paisagem urbana ilustrativa de Minas Gerais"
-                    loading="lazy">
-
-                <p class="categoria">MINAS GERAIS • ECONOMIA</p>
-
-                <h3>Pedágios ficam mais caros em rodovias do Triângulo Mineiro</h3>
-
-                <p>
-                    O reajuste das tarifas de oito praças de pedágio
-                    entrou em vigor nesta quinta-feira, 22 de outubro.
-                    A mudança atinge rodovias do Triângulo Mineiro
-                    e do Alto Paranaíba.
-                </p>
-
-                <a href="https://radiomontanhesa.com.br/news"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Consultar a notícia e os detalhes
-                </a>
-            </article>
-
-            <article class="cartao-noticia" id="rio">
-                <img
-                    src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=600&q=85"
-                    alt="Paisagem do Rio de Janeiro com montanhas e mar"
-                    loading="lazy">
-
-                <p class="categoria">RIO DE JANEIRO • SEGURANÇA PÚBLICA</p>
-
-                <h3>Diretora de presídio feminino é detida sob suspeita de desvio de alimentos</h3>
-
-                <p>
-                    Uma diretora de unidade prisional na Zona Norte do
-                    Rio foi detida após uma investigação sobre suspeita
-                    de desvio de alimentos destinados à instituição.
-                    O caso segue sob apuração.
-                </p>
-
-                <a
-                    href="https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/10/22/diretora-de-presidio-feminino-e-presa-por-suspeita-de-desvio-de-alimentos-no-rio.ghtm"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Ler a reportagem completa
-                </a>
-            </article>
-
-            <article class="cartao-noticia" id="cultura">
-                <img
-                    src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=600&q=85"
-                    alt="Público em evento cultural"
-                    loading="lazy">
-
-                <p class="categoria">CULTURA • BELO HORIZONTE</p>
-
-                <h3>BH recebe atividades de patrimônio cultural nesta quinta</h3>
-
-                <p>
-                    O 3º Simpósio do Patrimônio Cultural de Belo Horizonte
-                    está previsto para hoje, no Museu Histórico Abílio
-                    Barreto, com programação dedicada à preservação
-                    e à educação patrimonial.
-                </p>
-
-                <a
-                    href="https://portalbelohorizonte.com.br/museuscentro/2026/eventos/simposio/cultural/3o-simposio-do-patrimonio-cultural-de-belo-horizonte"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Consultar programação oficial
-                </a>
-            </article>
-
-            <article class="cartao-noticia" id="tecnologia">
-                <img
-                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=85"
-                    alt="Pessoa utilizando computador — imagem ilustrativa sobre tecnologia"
-                    loading="lazy">
-
-                <p class="categoria">TECNOLOGIA</p>
-
-                <h3>Ferramentas digitais ampliam possibilidades de estudo</h3>
-
-                <p>
-                    Plataformas digitais e recursos de aprendizagem
-                    podem apoiar estudantes, professores e profissionais.
-                    O uso consciente é importante para a segurança
-                    e a qualidade das informações.
-                </p>
-
-                <a
-                    href="https://www.unesco.org/pt/digital-education"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Saiba mais sobre educação digital
-                </a>
-            </article>
+    <main>
+        <section class="destaque" id="destaque">
+            <div class="texto-destaque">
+                <p class="categoria">SUL-AMERICANA • ATLÉTICO-MG</p>
+                <h1>Galo está na final: Atlético-MG vai enfrentar o Boca Juniors</h1>
+                <p>Mesmo com derrota por 2 a 0 no Uruguai, o time mineiro avançou com 3 a 2 no placar agregado e disputará a decisão continental em novembro.</p>
+                <div class="detalhes"><span>23 OUT 2026</span><span>•</span><span>Redação TimesBH</span></div>
+                <a class="botao" href="https://www1.folha.uol.com.br/esporte/2026/10/atletico-mg-leva-sufoco-no-final-perde-no-uruguai-mas-vai-a-decisao-da-sul-americana.shtml" target="_blank" rel="noopener noreferrer">Leia a reportagem <span>↗</span></a>
+            </div>
+            <a class="foto-destaque" href="https://www.flickr.com/photos/clubeatleticomineiro/55589882476" target="_blank" rel="noopener noreferrer" aria-label="Abrir foto original do Atlético-MG">
+                <img src="https://live.staticflickr.com/65535/55589882476_3685b653d5.jpg" alt="Atlético-MG em partida pela Copa Sul-Americana">
+                <span class="legenda-foto">Foto de arquivo: Pedro Souza / Atlético-MG • fonte oficial</span>
+            </a>
         </section>
-    </aside>
-</main>
 
+        <section class="ultimas" id="esportes">
+            <div class="titulo-secao"><div><p class="sobretitulo">ACONTECEU NO FUTEBOL</p><h2>Últimas notícias</h2></div><span class="linha-laranja"></span></div>
+            <div class="grade-noticias">
+                <article class="noticia-card noticia-principal-card">
+                    <a class="imagem-card" href="https://ge.globo.com/google/amp/futebol/times/flamengo/noticia/2026/10/23/flamengo-sai-da-libertadores-invicto-mas-decepcao-e-sequencia-ruim-elevam-pressao-no-brasileiro.ghtml" target="_blank" rel="noopener noreferrer">
+                        <img src="https://storage.googleapis.com/crf-strapi-media-prd/Whats_App_Image_2026_08_09_at_21_19_43_e119e0df19/Whats_App_Image_2026_08_09_at_21_19_43_e119e0df19.jpeg" alt="Bruno Henrique pelo Flamengo em partida anterior" loading="lazy">
+                        <span class="etiqueta-card">LIBERTADORES</span>
+                    </a>
+                    <div class="conteudo-card"><p class="categoria">FLAMENGO</p><h3>Flamengo cai nos pênaltis e agora volta o foco para o Brasileirão</h3><p>Após empate sem gols com o Estudiantes, o Rubro-Negro foi eliminado e precisa reagir na reta final do campeonato nacional.</p><a class="link-noticia" href="https://ge.globo.com/google/amp/futebol/times/flamengo/noticia/2026/10/23/flamengo-sai-da-libertadores-invicto-mas-decepcao-e-sequencia-ruim-elevam-pressao-no-brasileiro.ghtml" target="_blank" rel="noopener noreferrer">Ler no ge <span>↗</span></a></div>
+                </article>
 
-<section class="esportes" id="esportes">
-    <h2>⚽ Central do Esporte</h2>
-    <p class="introducao-esportes">
-        Libertadores e Sul-Americana: os principais acontecimentos
-        do futebol nesta quinta-feira, 22 de outubro de 2026.
-    </p>
+                <article class="noticia-card">
+                    <a class="imagem-card" href="https://www.orepublicano.com.br/noticias/8559/atletico-mg-perde-por-2-a-0-no-uruguai-mas-vai-a-final-da-sul-americana-contra-o-boca" target="_blank" rel="noopener noreferrer">
+                        <img src="https://live.staticflickr.com/65535/55589882476_3685b653d5.jpg" alt="Jogadores do Atlético-MG em partida internacional" loading="lazy">
+                        <span class="etiqueta-card">SUL-AMERICANA</span>
+                    </a>
+                    <div class="conteudo-card"><p class="categoria">ATLÉTICO-MG</p><h3>Final contra o Boca será disputada em 21 de novembro</h3><p>A decisão em jogo único está marcada para Barranquilla, na Colômbia. O Galo busca seu primeiro título da competição.</p><a class="link-noticia" href="https://www.orepublicano.com.br/noticias/8559/atletico-mg-perde-por-2-a-0-no-uruguai-mas-vai-a-final-da-sul-americana-contra-o-boca" target="_blank" rel="noopener noreferrer">Ler reportagem <span>↗</span></a></div>
+                </article>
 
-    <div class="cartoes-esportivos">
+                <article class="noticia-card">
+                    <a class="imagem-card" href="https://ge.globo.com/futebol/times/flamengo/noticia/2026/10/22/flamengo-x-estudiantes-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml" target="_blank" rel="noopener noreferrer">
+                        <img src="https://storage.googleapis.com/crf-strapi-media-prd/Whats_App_Image_2026_08_09_at_21_19_43_e119e0df19/Whats_App_Image_2026_08_09_at_21_19_43_e119e0df19.jpeg" alt="Foto de arquivo de Bruno Henrique pelo Flamengo" loading="lazy">
+                        <span class="etiqueta-card">BRASILEIRÃO</span>
+                    </a>
+                    <div class="conteudo-card"><p class="categoria">PRÓXIMO JOGO</p><h3>Flamengo e Atlético-MG se enfrentam na segunda-feira</h3><p>O confronto está previsto para 26 de outubro, às 20h, no Maracanã, pela reta final do Campeonato Brasileiro.</p><a class="link-noticia" href="https://ge.globo.com/google/amp/futebol/times/flamengo/noticia/2026/10/23/flamengo-sai-da-libertadores-invicto-mas-decepcao-e-sequencia-ruim-elevam-pressao-no-brasileiro.ghtml" target="_blank" rel="noopener noreferrer">Acompanhar no ge <span>↗</span></a></div>
+                </article>
+            </div>
+        </section>
 
-        <!-- FLAMENGO -->
-        <article class="cartao-esporte">
-            <img
-                src="https://storage.googleapis.com/crf-strapi-media-prd/Whats_App_Image_2026_08_09_at_21_19_43_e119e0df19/Whats_App_Image_2026_08_09_at_21_19_43_e119e0df19.jpeg"
-                alt="Bruno Henrique comemorando pelo Flamengo em partida anterior"
-                loading="lazy">
-            <p class="credito-foto">Foto de arquivo: Gilvan de Souza / CRF • <a href="https://www.flamengo.com.br/flamengo/noticias/futebol/com-golacos-de-erick-pulgar-e-bruno-henrique-flamengo-bate-o-vitoria-e-segue-na-caca-ao-lider" target="_blank" rel="noopener noreferrer">Fonte oficial da foto</a> • <a href="https://www.gazetaesportiva.com/campeonatos/libertadores-da-america/flamengo-x-estudiantes-fotos-semifinal-libertadores-2026/" target="_blank" rel="noopener noreferrer">Galeria do jogo contra o Estudiantes</a></p>
+        <section class="minas" id="minas">
+            <div class="minas-texto"><p class="sobretitulo">NOTÍCIAS DE MINAS</p><h2>Informação local também importa.</h2><p>Acompanhe comunicados, serviços e notícias da capital mineira nos canais oficiais.</p><a class="botao botao-claro" href="https://prefeitura.pbh.gov.br/" target="_blank" rel="noopener noreferrer">Prefeitura de Belo Horizonte ↗</a></div>
+            <div class="minas-links"><a href="https://www.agenciaminas.mg.gov.br/" target="_blank" rel="noopener noreferrer"><span>01</span><div><strong>Agência Minas</strong><small>Notícias do Governo de Minas Gerais</small></div><b>↗</b></a><a href="https://portalbelohorizonte.com.br/" target="_blank" rel="noopener noreferrer"><span>02</span><div><strong>Portal Belo Horizonte</strong><small>Cultura, eventos e serviços da cidade</small></div><b>↗</b></a></div>
+        </section>
 
-            <p class="categoria">LIBERTADORES • JOGO DE HOJE</p>
+        <section class="fontes" id="fontes"><p class="sobretitulo">TRANSPARÊNCIA</p><h2>De onde vêm as notícias?</h2><p>As matérias desta página resumem informações publicadas por veículos jornalísticos e fontes oficiais. Clique nos links de cada notícia para ler o conteúdo original. As fotos esportivas são identificadas com links para suas fontes.</p><p class="nota">Este é um projeto de estudo em HTML e CSS. Confira as atualizações diretamente nas fontes, pois as notícias e os resultados podem mudar.</p></section>
+    </main>
 
-            <h3>Flamengo é eliminado pelo Estudiantes nos pênaltis e se despede da Libertadores</h3>
-
-            <p>
-                Depois de novo empate sem gols no Maracanã, o Flamengo foi
-                superado pelo Estudiantes por 3 a 2 na disputa de pênaltis
-                e ficou fora da final da Libertadores. A decisão foi
-                disputada na noite de quinta-feira, 22 de outubro.
-            </p>
-
-            <p><strong>Resultado:</strong> Flamengo 0 (2) x (3) 0 Estudiantes.</p>
-
-            <a href="https://ge.globo.com/futebol/times/flamengo/noticia/2026/10/22/flamengo-x-estudiantes-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml"
-               target="_blank"
-               rel="noopener noreferrer">
-                Leia a reportagem completa no ge
-            </a>
-        </article>
-
-        <!-- ATLÉTICO-MG -->
-        <article class="cartao-esporte">
-            <img
-                src="https://live.staticflickr.com/65535/55589882476_3685b653d5.jpg"
-                alt="Montevideo City Torque e Atlético-MG em partida da Sul-Americana"
-                loading="lazy">
-            <p class="credito-foto">Foto de arquivo do jogo de ida: Pedro Souza / Atlético • <a href="https://www.flickr.com/photos/clubeatleticomineiro/55589882476" target="_blank" rel="noopener noreferrer">Fonte oficial da foto</a> • <a href="https://ge.globo.com/mg/futebol/copa-sul-americana/noticia/2026/10/21/montevideo-city-torque-x-atletico-mg-assista-aos-melhores-momentos-e-gols.ghtml" target="_blank" rel="noopener noreferrer">Reportagem do jogo de volta</a></p>
-
-            <p class="categoria">SUL-AMERICANA • CLASSIFICADO</p>
-
-            <h3>Atlético-MG perde no Uruguai, mas está na final da Sul-Americana</h3>
-
-            <p>
-                O Atlético-MG perdeu por 2 a 0 para o Montevideo City
-                Torque na noite de quarta-feira, dia 21. Mesmo com
-                o resultado adverso, o Galo garantiu a classificação
-                graças à vitória por 3 a 0 no jogo de ida.
-            </p>
-
-            <p><strong>Placar agregado: Atlético-MG 3 x 2 City Torque.</strong></p>
-
-            <p>
-                O time mineiro suportou a pressão nos minutos finais
-                e confirmou presença em mais uma decisão continental.
-            </p>
-
-            <a href="https://ge.globo.com/mg/futebol/copa-sul-americana/noticia/2026/10/21/montevideo-city-torque-x-atletico-mg-assista-aos-melhores-momentos-e-gols.ghtml"
-               target="_blank"
-               rel="noopener noreferrer">
-                Veja os gols e os melhores momentos no ge
-            </a>
-        </article>
-
-        <!-- FLUMINENSE -->
-        <article class="cartao-esporte">
-            <img
-                src="https://live.staticflickr.com/65535/55590355131_bc0e65d952.jpg"
-                alt="Fluminense e Palmeiras na semifinal da Libertadores"
-                loading="lazy">
-            <p class="credito-foto">Foto de arquivo do jogo de ida: Marina Garcia / Fluminense F.C. • <a href="https://www.flickr.com/photos/oficialflu/55590355131" target="_blank" rel="noopener noreferrer">Fonte oficial da foto</a> • <a href="https://www.gazetaesportiva.com/times/palmeiras/palmeiras-x-fluminense-veja-fotos-do-jogo-de-volta-da-semifinal-da-libertadores-21-10-2026/" target="_blank" rel="noopener noreferrer">Galeria do jogo de volta</a></p>
-
-            <p class="categoria">LIBERTADORES • ELIMINAÇÃO</p>
-
-            <h3>Fluminense vence o Palmeiras, mas cai nos pênaltis e está eliminado</h3>
-
-            <p>
-                O Fluminense venceu o Palmeiras por 1 a 0 na noite
-                de quarta-feira, em São Paulo. Hércules marcou o gol
-                tricolor, que levou o confronto ao empate por 2 a 2
-                no placar agregado.
-            </p>
-
-            <p>
-                Nas cobranças de pênaltis, porém, o Palmeiras venceu
-                por 5 a 3 e eliminou o time carioca da competição.
-            </p>
-
-            <p><strong>Placar do jogo:</strong> Palmeiras 0 x 1 Fluminense.</p>
-            <p><strong>Pênaltis:</strong> Palmeiras 5 x 3 Fluminense.</p>
-
-            <a href="https://ge.globo.com/futebol/times/fluminense/noticia/2026/10/22/analise-fluminense-flerta-com-nova-noite-epica-na-libertadores-mas-termina-revivendo-trauma-dos-penaltis.ghtml"
-               target="_blank"
-               rel="noopener noreferrer">
-                Leia a análise e veja os melhores momentos no ge
-            </a>
-        </article>
-
-    </div>
-
-    <p class="aviso">
-        Edição de 23/10/2026. As fotos esportivas têm créditos e links para as fontes originais. Confira os direitos e as condições de uso de cada imagem antes de publicar o site.
-    </p>
-</section>
-
-
-<section class="sobre">
-    <h2>Sobre o Jornal TimesBH</h2>
-
-    <p>
-        O Jornal TimesBH é um portal de notícias dedicado a Belo
-        Horizonte, Minas Gerais, Rio de Janeiro, esportes, cultura,
-        tecnologia e assuntos de interesse público.
-    </p>
-
-    <p>
-        Nosso objetivo é facilitar o acesso à informação e indicar
-        fontes confiáveis para que os leitores possam consultar
-        os detalhes de cada notícia.
-    </p>
-
-    <a href="https://portalbelohorizonte.com.br/"
-       target="_blank"
-       rel="noopener noreferrer">
-        Portal Oficial de Belo Horizonte
-    </a>
-</section>
-
-<footer class="rodape">
-    <p><strong>Jornal TimesBH</strong> — Minas, Rio e Brasil: informação perto de você.</p>
-    <p>Edição de 23 de outubro de 2026.</p>
-    <p>
-        © 2026 Jornal TimesBH — Todos os direitos reservados.
-    </p>
-</footer>
-
+    <footer class="rodape"><a class="marca marca-rodape" href="#inicio"><span class="logo">TBH</span><span class="nome-portal">TimesBH<span class="ponto-logo">.</span><small>NOTÍCIA NA VELOCIDADE DO JOGO</small></span></a><p>Minas, esporte e informação perto de você.</p><p>© 2026 TimesBH • Projeto educacional</p></footer>
 </body>
 </html>
