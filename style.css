@@ -407,3 +407,152 @@ body {
         margin: 0 0 18px;
     }
 }
+
+
+/* =============================== */
+/* MELHORIAS VISUAIS SIMPLES        */
+/* Mantém o azul-marinho e o laranja */
+/* =============================== */
+
+/* Deixa o cabeçalho mais organizado */
+.cabecalho {
+    border-bottom: 4px solid #f28c28;
+}
+
+/* Faz o menu acompanhar a leitura sem exagerar no efeito */
+.menu a {
+    border-radius: 4px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.menu a:hover {
+    transform: translateY(-2px);
+}
+
+/* Dá mais destaque à faixa da edição */
+.faixa-noticias {
+    box-shadow: 0 2px 6px rgba(16, 42, 67, 0.08);
+}
+
+/* Cantos arredondados e sombra leve nos blocos principais */
+.noticia-principal,
+.bloco-lateral,
+.esportes,
+.sobre {
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(16, 42, 67, 0.05);
+}
+
+/* Fotos com tamanho consistente e sem distorção */
+.imagem-principal {
+    display: block;
+    max-height: 470px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cartao-noticia img,
+.cartao-esporte img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* Pequeno efeito quando o leitor passa o mouse nos cartões */
+.cartao-noticia,
+.cartao-esporte {
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.cartao-noticia:hover,
+.cartao-esporte:hover {
+    box-shadow: 0 6px 18px rgba(16, 42, 67, 0.12);
+    transform: translateY(-3px);
+}
+
+/* Links de notícia ficam fáceis de reconhecer */
+.cartao-noticia a,
+.cartao-esporte a,
+.sobre a {
+    display: inline-block;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+.credito-foto {
+    margin: 6px 0 14px;
+    font-size: 12px;
+    color: #667085;
+}
+
+.credito-foto a {
+    color: #a84412;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.credito-foto a:hover {
+    text-decoration: underline;
+}
+
+/* Melhora o espaço entre a foto e o texto da notícia principal */
+.noticia-principal figure {
+    margin: 18px 0;
+}
+
+.noticia-principal figcaption {
+    color: #667085;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+/* Em celulares, as fotos ficam um pouco mais baixas */
+@media (max-width: 800px) {
+    .cartao-noticia img,
+    .cartao-esporte img {
+        height: 190px;
+    }
+
+    .noticia-principal,
+    .bloco-lateral,
+    .esportes,
+    .sobre {
+        border-radius: 6px;
+    }
+}
+
+
+/* Aparência editorial: mais próxima de um portal de notícias tradicional */
+.noticia-principal h2,
+.cartao-noticia h3,
+.cartao-esporte h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.cartao-esporte {
+    border-top: 3px solid #102a43;
+}
+
+.cartao-esporte img,
+.cartao-noticia img {
+    background-color: #e5e7eb;
+}
+
+.credito-foto {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 9px;
+    line-height: 1.5;
+}
+
+.credito-foto a {
+    display: inline;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .noticia-principal h2 {
+        font-size: 25px;
+    }
+}
